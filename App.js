@@ -54,7 +54,7 @@ export default class App extends Component<Props> {
           
               <WebView 
           style={styles.WebViewStyle} 
-          source={{uri: 'https://Google.com'}} 
+          source={{uri: 'http://103.41.84.32/INDEX.HTM'}} 
           javaScriptEnabled={true}
           domStorageEnabled={true}  />
               
