@@ -4,6 +4,7 @@
  * @flow
  */
 
+// import Expo from 'expo';
 import React, { Component } from 'react';
 import {
     Platform,
@@ -25,13 +26,6 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
     render() {
-            <WebView
-	source={{uri: 'https://github.com/facebook/react-native'}}
-        style={{marginTop: 20}}
-            />
-	    let pic = {
-                uri: 'http://103.41.84.32/images/HeaderLPI.jpg'
-        };
     // return (
     //   <View style={styles.container}>
     //     <Text style={styles.welcome}>
@@ -50,14 +44,16 @@ export default class App extends Component<Props> {
     //   </View>
 
     // );
+//LWS Main Page Web View
       return (
           
               <WebView 
           style={styles.WebViewStyle} 
-          source={{uri: 'http://103.41.84.32/INDEX.HTM'}} 
+          source={{uri: 'http://103.41.84.32/INDEX.HTM'}}
+//	  source={{uri: 'http://103.41.84.32/LOG.HTM'}} 
           javaScriptEnabled={true}
           domStorageEnabled={true}  />
-              
+       
       );
   }
 }
@@ -86,6 +82,9 @@ const styles = StyleSheet.create({
 	marginTop: 10,
 	marginBottom: 5,
  },
+ WebViewStyle: {
+	marginTop: 50,
+ }
 });
 
 import Amplify from 'aws-amplify';
